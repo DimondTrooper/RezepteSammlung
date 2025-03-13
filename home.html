@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite - PC Europa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC6AaacWZKJy-oRgYF_HLutZSafaVi_5og",
+          authDomain: "pc-jawa.firebaseapp.com",
+          projectId: "pc-jawa",
+          storageBucket: "pc-jawa.firebasestorage.app",
+          messagingSenderId: "460281373404",
+          appId: "1:460281373404:web:8c01c44f3746198e334a19",
+          measurementId: "G-QY0H3M0XJR"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <header>
+        <h1>Willkommen bei PC Europa</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Startseite</a></li>
+                <li><a href="buy.html">Kaufen</a></li>
+                <li><a href="sell.html">Verkaufen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home-section">
+            <h2>Dein Marktplatz für PCs in Europa</h2>
+            <p>Hier kannst du gebrauchte PCs kaufen oder verkaufen.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 PC Europa</p>
+    </footer>
+</body>
+</html>

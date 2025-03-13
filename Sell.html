@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkaufen - PC Europa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PC Europa</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Startseite</a></li>
+                <li><a href="buy.html">Kaufen</a></li>
+                <li><a href="sell.html">Verkaufen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sell-form-section">
+            <h2>Start Selling</h2>
+            <form id="sell-form">
+                <!-- Kategorie -->
+                <div class="form-group">
+                    <label for="category">Kategorie *</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select category</option>
+                        <option value="gaming-pcs">Gaming PCs</option>
+                        <option value="gpus">GPUs</option>
+                        <option value="cpus">CPUs</option>
+                        <option value="components">Components</option>
+                        <option value="peripherals">Peripherals</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="other-systems">Other Systems</option>
+                    </select>
+                </div>
+
+                <!-- Listing-Name -->
+                <div class="form-group">
+                    <label for="listing-name">Listing Name *</label>
+                    <input type="text" id="listing-name" name="listing-name" required placeholder="Describe your listing in a minimum of 5 words">
+                </div>
+
+                <!-- Bilder -->
+                <div class="form-group">
+                    <label for="images">Bilder *</label>
+                    <input type="file" id="images" name="images" accept=".webp, .jpg, .jpeg, .png" multiple required>
+                    <p>Erhöhe deine Verkaufschancen, indem du klare und hochwertige Bilder hochlädst.</p>
+                    <div id="image-preview"></div>
+                </div>
+
+                <!-- Beschreibung -->
+                <div class="form-group">
+                    <label for="description">Beschreibung *</label>
+                    <textarea id="description" name="description" rows="5" required placeholder="Describe your listing: the more details, the better for buyers!"></textarea>
+                </div>
+
+                <!-- Preis -->
+                <div class="form-group">
+                    <label for="price">Preis *</label>
+                    <input type="number" id="price" name="price" required placeholder="Enter price in €">
+                </div>
+
+                <!-- Veröffentlichen -->
+                <div class="form-group">
+                    <button type="submit">Publish Now</button>
+                    <button type="button" id="save-draft">Save Draft</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025, PC Europa, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f0ff; /* Hellblauer Hintergrund */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a73e8; /* Kräftiges Blau */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cce7ff; /* Hellblau für Hover-Effekt */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #1a73e8; /* Kräftiges Blau */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Startseite */
+.home-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.home-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a73e8; /* Kräftiges Blau */
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Kaufseite */
+#pc-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pc-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pc-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pc-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #1a73e8; /* Kräftiges Blau */
+}
+
+.pc-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.pc-item strong {
+    color: #333;
+}
+
+/* Verkaufsseite */
+.sell-form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sell-form-section h2 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1a73e8;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form-group button:hover {
+    background-color: #1557b0;
+}
+
+/* Datei-Upload */
+.form-group input[type="file"] {
+    padding: 5px;
+}
+
+/* Detailseite */
+#listing-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#listing-details h2 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+#listing-details p {
+    margin: 10px 0;
+    color: #333;
+}
+
+#listing-details img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Bildvorschau */
+#image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#image-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+/* Listing-Karten */
+.pc-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.pc-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pc-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #1a73e8;
+}
+
+.pc-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.pc-item strong {
+    color: #333;
+}
+
+.pc-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
